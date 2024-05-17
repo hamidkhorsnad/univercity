@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My CV</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+   <!-- Create By Joker Banny | Design From Figma: By ABM -->
+<div class="flex min-h-screen bg-gray-900">
+    <div class="mx-auto pb-20">
+      <div class="mx-auto mb-[40px] mt-[98px] h-[213px] w-[213px] overflow-hidden rounded-full bg-gradient-to-tr from-[#FF8660] to-[#8000FF]">
+        <img src="https://i.imgur.com/4U5tBXC.png" alt="" />
+      </div>
+      <h1 class="max-w-screen-sm text-center text-[55px] font-extrabold text-white">
+        Hello There 🙃👋🏽<br />
+        I'm  <span class="text-transparent bg-clip-text bg-gradient-to-tr from-[#FF8660] to-[#8000FF]"">{{ profile.name }}</span>
+      </h1>
+      <ul class="flex flex-col text-white row-center space-y-4 p-8 rounded-xl capitalize *:border *:border-dashed *:rounded-md *:px-8 *:py-4 *:flex *:justify-between *:items-center w-full">
+        <li class="text-lg font-bold"><strong class="text-base font-normal text-gray-400">Email:</strong> {{ profile.email }}</p>
+        <li class="text-lg font-bold"><strong class="text-base font-normal text-gray-400">Phone:</strong> {{ profile.phone }}</p>
+        <li class="text-lg font-bold"><strong class="text-base font-normal text-gray-400">Summary:</strong> {{ profile.summary }}</p>
+        <li class="text-lg font-bold"><strong class="text-base font-normal text-gray-400">skills:</strong> {{ profile.skills }}</p>
+        <li class="text-lg font-bold"><strong class="text-base font-normal text-gray-400">experience:</strong> {{ profile.experience }}</p>
+        <li class="text-lg font-bold"><strong class="text-base font-normal text-gray-400">education:</strong> {{ profile.education }}</p>
+        </ul> 
+  <div class="text-center">
+          <a href="https://github.com/hamidkhorsnad" class="text-gray-800 inline-block px-[30px] py-[16px] mr-[18px] bg-white rounded-full font-semibold text-[22px]">My Github</a>
+          <button class="text-white inline-block px-[30px] py-[16px] bg-transparent border-2 rounded-full font-semibold text-[22px]">Download CV</button>
+  </div>
+    </div>
+  </div>
+
+    {% comment %} <h1 class="text-center mx-auto w-full text-3xl">
+        <p class="font-normal">Hello There 🙃👋🏽<p>
+            <p class="text-7xl font-bold">I'm {{ profile.name }}</p>
+    </h1> {% endcomment %}
+    {% comment %} <ul class="flex flex-col row-center space-y-4 p-8 rounded-xl capitalize *:border *:border-dashed *:rounded-md *:p-4 *:flex *:justify-between *:items-center w-full">
+      <li class="text-lg"><strong class="text-base">Email:</strong> {{ profile.email }}</p>
+      <li class="text-lg"><strong class="text-base">Phone:</strong> {{ profile.phone }}</p>
+      <li class="text-lg"><strong class="text-base">Summary:</strong> {{ profile.summary }}</p>
+      <li class="text-lg"><strong class="text-base">skills:</strong> {{ profile.skills }}</p>
+      <li class="text-lg"><strong class="text-base">experience:</strong> {{ profile.experience }}</p>
+      <li class="text-lg"><strong class="text-base">education:</strong> {{ profile.education }}</p>
+      </ul> {% endcomment %}
+  </body>
+</html>
